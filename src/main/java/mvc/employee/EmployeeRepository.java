@@ -1,4 +1,4 @@
-package com.spring.mvc.employee;
+package mvc.employee;
 
 import java.util.List;
 

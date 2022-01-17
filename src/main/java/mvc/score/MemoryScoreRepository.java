@@ -1,4 +1,4 @@
-package com.spring.mvc.score;
+package mvc.score;
 
 import org.springframework.stereotype.Repository;
 

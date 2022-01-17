@@ -1,12 +1,13 @@
 package com.spring.mvc.score;
 
+import mvc.score.MemoryScoreRepository;
+import mvc.score.Score;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 //알트 쉬프트 티
 class MemoryScoreRepositoryTest {
 

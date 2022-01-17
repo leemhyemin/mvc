@@ -1,4 +1,4 @@
-package com.spring.mvc.basic.controller.v2;
+package mvc.basic.controller.v2;
 
 import lombok.*;
 

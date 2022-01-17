@@ -1,4 +1,4 @@
-package com.spring.mvc.score;
+package mvc.score;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -27,6 +27,7 @@ public class Score {
         this.stuNum = ++seq;
     }
 
+    //jsp  Getter 안쓰면 안됌
     public Score(String name, int kor, int eng, int math) {
         this();
         this.name = name;

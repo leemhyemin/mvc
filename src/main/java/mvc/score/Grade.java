@@ -1,4 +1,4 @@
-package com.spring.mvc.score;
+package mvc.score;
 
 public enum Grade {
     A, B, C, D, F

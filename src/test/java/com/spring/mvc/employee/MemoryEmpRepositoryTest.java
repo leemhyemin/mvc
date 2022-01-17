@@ -1,10 +1,11 @@
 package com.spring.mvc.employee;
 
+import mvc.employee.Employee;
+import mvc.employee.EmployeeRepository;
+import mvc.employee.MemoryEmpRepository;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemoryEmpRepositoryTest {
 

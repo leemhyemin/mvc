@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Repository
+@Repository("mr")
 //알트엔터 오버라이드
 public class MemoryScoreRepository implements ScoreRepository{
     

@@ -2,6 +2,7 @@ package com.spring.mvc.springweb.board.controller;
 
 import com.spring.mvc.springweb.board.domain.Board;
 import com.spring.mvc.springweb.board.domain.ModifyBoard;
+import com.spring.mvc.springweb.board.service.BoardService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -69,12 +70,12 @@ public class BoardController {
     //글 수정 처리요청
     @PostMapping("/board/modify")
     public String modify(ModifyBoard modArticle) {
+        //기존에 있던 맵 데이터로 보드에 다시 세팅 수정!
         Board board = boardService.getContent(modArticle.getBoardNo());
         board.setWriter(modArticle.getTitle());
         board.setTitle(modArticle.getTitle());
         board.setContent(modArticle.getContent());
         boardService.modifyArticle(board);
-        return "redirect:/board/content?boardNo="+modArticle.getBoardNo();
+        return "redirect:/board/content?boardNo=" + modArticle.getBoardNo();
     }
-
 }
